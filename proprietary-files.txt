@@ -1857,7 +1857,6 @@ odm/lib/libswresample.so
 odm/lib/libswscale.so
 odm/lib/vendor.oplus.hardware.appradio@1.0.so
 odm/lib/vendor.oplus.hardware.charger@1.0.so
-odm/lib/vendor.oplus.hardware.commondcs@1.0.so
 odm/lib/vendor.oplus.hardware.cryptoeng@1.0.so
 odm/lib/vendor.oplus.hardware.engineer@1.0.so
 odm/lib/vendor.oplus.hardware.engsensor@1.0.so
@@ -1888,7 +1887,6 @@ odm/lib64/libswresample.so
 odm/lib64/libswscale.so
 odm/lib64/vendor.oplus.hardware.appradio@1.0.so
 odm/lib64/vendor.oplus.hardware.charger@1.0.so
-odm/lib64/vendor.oplus.hardware.commondcs@1.0.so
 odm/lib64/vendor.oplus.hardware.cryptoeng@1.0.so
 odm/lib64/vendor.oplus.hardware.engineer@1.0.so
 odm/lib64/vendor.oplus.hardware.engsensor@1.0.so
@@ -2576,7 +2574,6 @@ system_ext/bin/bt_logger
 system_ext/bin/cachebench_eng
 system_ext/bin/checkfutexwait
 system_ext/bin/CLGen
-system_ext/bin/common_dcs
 system_ext/bin/cpustress_eng
 system_ext/bin/criticallog
 system_ext/bin/datafree
@@ -2605,7 +2602,6 @@ system_ext/bin/oiface
 system_ext/bin/oplus_kevent
 system_ext/bin/oppo_adbd
 system_ext/bin/oppo_app_data
-system_ext/bin/oppo_theia
 system_ext/bin/perfservice
 system_ext/bin/PmicHistoryClear
 system_ext/bin/qccsyshalservice
@@ -2618,8 +2614,6 @@ system_ext/bin/resize_ext4
 system_ext/bin/rtspclient
 system_ext/bin/rtspserver
 system_ext/bin/self-init-system
-system_ext/bin/shutdown_log_back
-system_ext/bin/shutdown_log_native_helper.sh
 system_ext/bin/sigma_miracasthalservice
 system_ext/bin/stressapptest_eng
 system_ext/bin/svelte
@@ -2664,7 +2658,6 @@ system_ext/etc/horae/horae_SM8150.conf
 system_ext/etc/horae/horae_SM8250.conf
 system_ext/etc/horae/horae_SM8350.conf
 system_ext/etc/init/com.qualcomm.qti.sigma_miracast@1.0-service.rc
-system_ext/etc/init/common_dcs.rc
 system_ext/etc/init/datafree.rc
 system_ext/etc/init/debuglog_common.rc
 system_ext/etc/init/hans.rc
@@ -2686,7 +2679,6 @@ system_ext/etc/init/qvrd_ext.rc
 system_ext/etc/init/self-init-system.rc
 system_ext/etc/init/self_init_hephaestus.rc
 system_ext/etc/init/self_init_kevent.rc
-system_ext/etc/init/self_init_theia.rc
 system_ext/etc/init/sxrd_ext.rc
 system_ext/etc/init/system_engineermode.rc
 system_ext/etc/init/vendor.qti.hardware.qccsyshal@1.0-service.rc
@@ -2805,7 +2797,6 @@ system_ext/etc/wifi_operator_preset_ap_list.xml
 -system_ext/framework/uimservicelibrary.jar
 -system_ext/framework/vendor.oplus.hardware.biometrics.face-V1.0-java.jar
 -system_ext/framework/vendor.oplus.hardware.biometrics.faceservice-V1.0-java.jar
--system_ext/framework/vendor.oplus.hardware.commondcs-V1.0-java.jar
 -system_ext/framework/vendor.oplus.hardware.cryptoeng-V1.0-java.jar
 -system_ext/framework/vendor.oplus.hardware.eid-V1.0-java.jar
 -system_ext/framework/vendor.oplus.hardware.engineer-V1.0-java.jar

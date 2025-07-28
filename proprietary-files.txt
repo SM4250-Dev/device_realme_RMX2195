@@ -388,8 +388,6 @@ odm/lib64/libEIS.so
 odm/lib64/libFaceBeautyCap.so
 odm/lib64/libFaceBeautyPre.so
 odm/lib64/libhyperlapse.so
-odm/lib64/liblvimfs.so
-odm/lib64/liblvimfs_wrapper.so
 odm/lib64/libml_util.so
 odm/lib64/libmpbase.so
 odm/lib64/libOGLManager.so

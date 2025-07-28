@@ -2569,7 +2569,6 @@ vendor/lib64/vendor.qti.hardware.wigig.supptunnel@1.0.so
 
 # Misc
 system_ext/bin/asserttip
-system_ext/bin/atlasservice
 system_ext/bin/autochmod.sh
 system_ext/bin/autofixfreqtest.sh
 system_ext/bin/bspCriticalLog
@@ -2582,14 +2581,10 @@ system_ext/bin/cpustress_eng
 system_ext/bin/criticallog
 system_ext/bin/datafree
 system_ext/bin/debuglog_common.sh
-system_ext/bin/diag_callback_sample_system
-system_ext/bin/diag_dci_sample_system
-system_ext/bin/diag_mdlog_system
 system_ext/bin/do_replace_splash_logo.sh
 system_ext/bin/dump_switch
 system_ext/bin/dun-server
 system_ext/bin/engineer_system_shell.sh
-system_ext/bin/extractCurrentUefiLog
 system_ext/bin/fsck_exfat
 system_ext/bin/get-cplc
 system_ext/bin/hans
@@ -2607,16 +2602,11 @@ system_ext/bin/move_widevine_data.sh
 system_ext/bin/ntfs-3g
 system_ext/bin/ntfsfix
 system_ext/bin/oiface
-system_ext/bin/oplus_diag_mdlog_drain
 system_ext/bin/oplus_kevent
-system_ext/bin/oplus_log_performance.sh
 system_ext/bin/oppo_adbd
 system_ext/bin/oppo_app_data
-system_ext/bin/oppo_diag_mdlog
 system_ext/bin/oppo_theia
 system_ext/bin/perfservice
-system_ext/bin/phoenix_log_manager
-system_ext/bin/phoenix_log_native_helper.sh
 system_ext/bin/PmicHistoryClear
 system_ext/bin/qccsyshalservice
 system_ext/bin/qspmsvc
@@ -2634,7 +2624,6 @@ system_ext/bin/sigma_miracasthalservice
 system_ext/bin/stressapptest_eng
 system_ext/bin/svelte
 system_ext/bin/sxrservice
-system_ext/bin/test_diag_system
 system_ext/bin/test_ep_hidl
 system_ext/etc/app_launch_opt_list.xml
 system_ext/etc/bluetooth/bt_configstore.conf
@@ -2645,7 +2634,6 @@ system_ext/etc/cdma_call_conf.xml
 system_ext/etc/comm_nwpower_config.xml
 system_ext/etc/comm_nwpower_screenon_config.xml
 system_ext/etc/connectivity_ssv.xml
-system_ext/etc/criticallog_config.xml
 system_ext/etc/ecc_list.xml
 system_ext/etc/fingerprint_switch_list.xml
 system_ext/etc/fonts_base.xml
@@ -2675,7 +2663,6 @@ system_ext/etc/horae/horae_SM7250.conf
 system_ext/etc/horae/horae_SM8150.conf
 system_ext/etc/horae/horae_SM8250.conf
 system_ext/etc/horae/horae_SM8350.conf
-system_ext/etc/init/atlasservice.rc
 system_ext/etc/init/com.qualcomm.qti.sigma_miracast@1.0-service.rc
 system_ext/etc/init/common_dcs.rc
 system_ext/etc/init/datafree.rc

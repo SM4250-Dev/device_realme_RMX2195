@@ -23,7 +23,8 @@ source "${HELPER}"
 
 function vendor_imports() {
     cat <<EOF >>"$1"
-		"vendor/qcom/common/system/wfd"
+		"vendor/qcom/common/system/wfd",
+		"vendor/qcom/common/system/gps"
 EOF
 }
 

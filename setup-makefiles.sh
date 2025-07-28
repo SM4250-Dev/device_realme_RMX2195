@@ -24,7 +24,8 @@ source "${HELPER}"
 function vendor_imports() {
     cat <<EOF >>"$1"
 		"vendor/qcom/common/system/wfd",
-		"vendor/qcom/common/system/gps"
+		"vendor/qcom/common/system/gps",
+		"hardware/qcom-caf/sm8250"
 EOF
 }
 

@@ -23,11 +23,13 @@ source "${HELPER}"
 
 function vendor_imports() {
     cat <<EOF >>"$1"
+    		"hardware/oplus",
+    		"hardware/qcom-caf/sm8250",
 		"vendor/qcom/common/system/wfd",
 		"vendor/qcom/common/system/gps",
 		"vendor/qcom/opensource/dataservices",
-		"vendor/qcom/opensource/display",
-		"hardware/qcom-caf/sm8250"
+		"vendor/qcom/opensource/display"
+		
 EOF
 }
 

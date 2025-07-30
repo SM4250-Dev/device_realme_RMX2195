@@ -63,36 +63,21 @@ vendor/bin/hw/android.hardware.atrace@1.0-service
 vendor/etc/init/android.hardware.atrace@1.0-service.rc
 -vendor/etc/vintf/manifest/android.hardware.atrace@1.0-service.xml
 
-# Audio FX
-vendor/lib/soundfx/libasphere.so
-vendor/lib/soundfx/libqcbassboost.so
-vendor/lib/soundfx/libqcreverb.so
-vendor/lib/soundfx/libqcvirt.so
-vendor/lib/soundfx/libshoebox.so
-
-# Audio libraries
-odm/lib/libaudioEngineerTest.so
-odm/lib/liblvimfs.so
-odm/lib/liblvimfs_wrapper.so
-vendor/lib/liba2dpoffload.so
+# Audio
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
 vendor/lib/libacdbrtac.so
 vendor/lib/libadiertac.so
 vendor/lib/libadm.so
 vendor/lib/libaudcal.so
-vendor/lib/libaudio_log_utils.so
-vendor/lib/libaudioparsers.so
-vendor/lib/libbatterylistener.so
-vendor/lib/libcomprcapture.so
-vendor/lib/libexthwplugin.so
-vendor/lib/libhdmiedid.so
-vendor/lib/libhfp.so
-vendor/lib/libsndmonitor.so
-vendor/lib/libspkrprot.so
-vendor/lib/libhdmipassthru.so
 vendor/lib/libqtigef.so
-vendor/lib/libssrec.so
+
+# Audio FX
+vendor/lib/soundfx/libasphere.so
+vendor/lib/soundfx/libqcbassboost.so
+vendor/lib/soundfx/libqcreverb.so
+vendor/lib/soundfx/libqcvirt.so
+vendor/lib/soundfx/libshoebox.so
 
 # Audio-ACDB
 vendor/etc/acdbdata/adsp_avs_config.acdb
@@ -318,7 +303,6 @@ odm/lib64/libSNPE_G.so
 odm/lib64/libsnpe_loader.so
 odm/lib64/libstblur_api.so
 odm/lib64/libstblur_capture_api.so
-odm/lib64/libstdc++.so
 odm/lib64/libstface_fd_api.so
 odm/lib64/libVDBayerHDR.so
 odm/lib64/libVDBlurless.so
@@ -819,7 +803,6 @@ odm/lib64/libgf_hal_G5.so
 odm/lib64/libgf_hal_G6.so
 odm/lib64/libsl_fp_impl.so
 odm/lib64/anc.hal.so
-odm/lib64/vendor.oplus.hardware.biometrics.fingerprint@2.1.so
 odm/lib64/vendor.oplus.hardware.biometrics.fingerprintservice@1.0.so
 odm/vendor/firmware/goodixfp.b00
 odm/vendor/firmware/goodixfp.b01
@@ -839,10 +822,6 @@ odm/vendor/firmware/sileadta.b05
 odm/vendor/firmware/sileadta.b06
 odm/vendor/firmware/sileadta.b07
 odm/vendor/firmware/sileadta.mdt
--system_ext/framework/vendor.oplus.hardware.biometrics.fingerprint-V2.1-java.jar
--system_ext/framework/vendor.oplus.hardware.biometrics.fingerprintservice-V1.0-java.jar
-vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
-vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
 # Firmware
 odm/firmware/fastchg/20211/oplus_vooc_fw_op10.bin
@@ -1159,25 +1138,14 @@ vendor/lib/hw/lights.bengal.so
 vendor/lib64/hw/lights.bengal.so
 
 # Listen
-vendor/lib/hw/android.hardware.soundtrigger@2.1-impl.so
-vendor/lib/hw/android.hardware.soundtrigger@2.2-impl.so
-vendor/lib/hw/android.hardware.soundtrigger@2.3-impl.so
-vendor/lib/hw/sound_trigger.primary.bengal.so
-vendor/lib/libadpcmdec.so
+vendor/lib/libcapiv2svacnn.so
+vendor/lib/libcapiv2vop.so
 vendor/lib/libgcs-calwrapper.so
 vendor/lib/libgcs-ipc.so
 vendor/lib/libgcs-osal.so
 vendor/lib/libgcs.so
 vendor/lib/liblistensoundmodel2.so
-vendor/lib/libsmwrapper.so
-vendor/lib64/hw/android.hardware.soundtrigger@2.2-impl.so
-vendor/lib64/hw/android.hardware.soundtrigger@2.3-impl.so
-vendor/lib64/hw/sound_trigger.primary.bengal.so
-vendor/lib64/libgcs-calwrapper.so
-vendor/lib64/libgcs-ipc.so
-vendor/lib64/libgcs-osal.so
-vendor/lib64/libgcs.so
-vendor/lib64/liblistensoundmodel2.so
+vendor/lib/libmulawdec.so
 
 # Media
 vendor/bin/init.qti.media.sh

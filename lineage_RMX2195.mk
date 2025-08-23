@@ -19,7 +19,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Lineage stuff
-$(call inherit-product, vendor/sun/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_PIXEL_CHARGER := true
@@ -28,7 +28,7 @@ TARGET_INCLUDE_PIXEL_CHARGER := true
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := sun_RMX2195
+PRODUCT_NAME := lineage_RMX2195
 PRODUCT_DEVICE := RMX2195
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := RMX2195

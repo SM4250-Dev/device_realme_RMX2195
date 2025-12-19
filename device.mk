@@ -39,3 +39,6 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     device/realme/RMX2195
+PRODUCT_PACKAGES += \
+    android.hardware.audio@7.0-service \
+    android.hardware.audio.effect@7.0-service

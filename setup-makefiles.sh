@@ -8,6 +8,9 @@
 
 set -e
 
+DEVICE=RMX2195
+VENDOR=realme
+
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
@@ -21,65 +24,13 @@ if [ ! -f "${HELPER}" ]; then
 fi
 source "${HELPER}"
 
-function vendor_imports() {
-    cat <<EOF >>"$1"
-    		"hardware/oplus",
-		"vendor/qcom/common/system/wfd",
-		"vendor/qcom/common/system/gps",
-		"vendor/qcom/opensource/dataservices",
-		"vendor/qcom/opensource/display"
-		
-EOF
-}
-
-function lib_to_package_fixup_vendor_variants() {
-    if [ "$2" != "vendor" ]; then
-        return 1
-    fi
-
-    case "$1" in
-        com.qualcomm.qti.dpm.api@1.0 | \
-            libmmosal | \
-            vendor.qti.hardware.wifidisplaysession@1.0 | \
-            vendor.qti.imsrtpservice@3.0)
-            echo "$1-vendor"
-            ;;
-        libOmxCore | \
-            libwpa_client) ;;
-        *)
-            return 1
-            ;;
-    esac
-}
-
-function lib_to_package_fixup() {
-    lib_to_package_fixup_clang_rt_ubsan_standalone "$1" ||
-        lib_to_package_fixup_proto_3_9_1 "$1" ||
-        lib_to_package_fixup_vendor_variants "$@"
-}
-
 # Initialize the helper
-setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" true
+setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}"
 
 # Warning headers and guards
-write_headers "bengal"
+write_headers
 
-# The standard common blobs
 write_makefiles "${MY_DIR}/proprietary-files.txt" true
 
 # Finish
 write_footers
-
-if [ -s "${MY_DIR}/../${DEVICE}/proprietary-files.txt" ]; then
-    # Reinitialize the helper for device
-    setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false
-
-    # Warning headers and guards
-    write_headers
-
-    # The standard device blobs
-    write_makefiles "${MY_DIR}/../${DEVICE}/proprietary-files.txt" true
-
-    # Finish
-    write_footers
-fi

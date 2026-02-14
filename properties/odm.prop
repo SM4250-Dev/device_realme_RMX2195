@@ -1,0 +1,8 @@
+#
+# Extra ODM Propertied
+#
+
+ro.separate.soft=2172F
+ro.soc.manufacturer=QTI
+ro.soc.model=SM6225
+ro.vendor.qti.va_odm.support=1

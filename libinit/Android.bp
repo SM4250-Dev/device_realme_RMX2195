@@ -1,0 +1,13 @@
+//
+// Copyright (C) 2021 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_library_static {
+    name: "init_realme_RMX2195",
+    srcs: ["init_realme_RMX2195.cpp"],
+    whole_static_libs: ["//device/realme/sm4250-common:libinit_realme_bengal"],
+    include_dirs: ["system/core/init"],
+    recovery_available: true,
+}

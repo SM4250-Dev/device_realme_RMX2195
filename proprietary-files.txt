@@ -988,11 +988,6 @@ vendor/firmware/ipa_fws.elf
 vendor/firmware/ipa_fws.mdt
 
 # Sensors
--system_ext/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar
-vendor/bin/hw/android.hardware.sensors@2.0-service.multihal
-vendor/bin/sensors.qti
-vendor/etc/init/android.hardware.sensors@2.0-service-multihal.rc
--vendor/etc/vintf/manifest/android.hardware.sensors@2.0-multihal.xml
 vendor/lib64/libsensorcal.so
 vendor/lib64/libsensorslog.so
 vendor/lib64/libssc.so

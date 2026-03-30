@@ -42,7 +42,6 @@ vendor/bin/adsprpcd
 vendor/lib64/libadsprpc.so
 vendor/lib64/libadsp_default_listener.so
 vendor/lib64/libfastcvdsp_stub.so
-vendor/lib64/libfastcvopt.so
 vendor/lib64/libloadalgo_stub.so
 vendor/lib64/libmdsprpc.so
 vendor/lib64/libsdsprpc.so
@@ -202,11 +201,7 @@ odm/lib64/libXDocProcessSDK.so
 odm/lib64/libsymphony-cpu.so
 odm/lib64/lib_rectify.so
 odm/lib64/vendor.oplus.hardware.orms@1.0.so
-vendor/bin/hw/android.hardware.camera.provider@2.4-service_64
-vendor/etc/init/android.hardware.camera.provider@2.4-service_64.rc
 vendor/lib/libcamxexternalformatutils.so
-vendor/lib64/android.hardware.camera.provider@2.4-external.so
-vendor/lib64/android.hardware.camera.provider@2.4-legacy.so
 vendor/lib64/camera/com.qti.eeprom.truly_cmb433.so
 vendor/lib64/camera/com.qti.sensor.soda_cxt_gc02k0_macro.so
 vendor/lib64/camera/com.qti.sensor.soda_cxt_gc02m1b_depth.so
@@ -270,13 +265,11 @@ vendor/lib64/camera/fdconfigpreview.bin
 vendor/lib64/camera/fdconfigpreviewlite.bin
 vendor/lib64/camera/fdconfigvideo.bin
 vendor/lib64/camera/fdconfigvideolite.bin
-vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so
 vendor/lib64/hw/camera.qcom.so
 vendor/lib64/hw/com.qti.chi.override.so
 vendor/lib64/com.qti.feature2.generic.so
 vendor/lib64/com.qti.feature2.gs.so
 vendor/lib64/libbitmlengine.so
-vendor/lib64/libcamera2ndk_vendor.so
 vendor/lib64/libcamerapostproc.so
 vendor/lib64/libcamera_nn_stub.so
 vendor/lib64/libcamxexternalformatutils.so
@@ -995,12 +988,9 @@ vendor/lib64/libssc_default_listener.so
 vendor/lib64/sensors.ssc.so
 
 # Thermal engine
-vendor/bin/hw/android.hardware.thermal@2.0-service.qti
 vendor/bin/thermal-engine
-vendor/etc/init/android.hardware.thermal@2.0-service.qti.rc
 vendor/etc/init/init_thermal-engine.rc
 vendor/etc/thermal-engine.conf
--vendor/etc/vintf/manifest/android.hardware.thermal@2.0-service.qti.xml
 -vendor/lib/libthermalclient.so
 -vendor/lib64/libthermalclient.so
 
